@@ -1,0 +1,66 @@
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .Imgdiv {
+    width: 100%;
+    height: 500px;
+    background-image: url(https://images.pexels.com/photos/544966/pexels-photo-544966.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: 100% 100%;
+    -webkit-box-shadow: 1px 2px 20px green;
+            box-shadow: 1px 2px 20px green;
+    -webkit-animation: slider 100s infinite;
+            animation: slider 100s infinite;
+  }
+  
+  @-webkit-keyframes slider {
+    0% {
+      background-image: url(https://images.pexels.com/photos/544966/pexels-photo-544966.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }
+    15% {
+      background-image: url(https://images.pexels.com/photos/1216544/pexels-photo-1216544.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }
+    30% {
+      background-image: url(https://images.pexels.com/photos/1388944/floor-flooring-hand-man-1388944.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }
+    45% {
+      background-image: url(https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }
+    60% {
+      background-image: url(https://images.pexels.com/photos/3807277/pexels-photo-3807277.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }
+    75% {
+      background-image: url(https://images.pexels.com/photos/2628105/pexels-photo-2628105.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }
+    90% {
+      background-image: url(https://images.pexels.com/photos/6368/art-wall-brush-painting.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }
+  }
+  
+  @keyframes slider {
+    0% {
+      background-image: url(https://images.pexels.com/photos/544966/pexels-photo-544966.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }
+    15% {
+      background-image: url(https://images.pexels.com/photos/1216544/pexels-photo-1216544.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }
+    30% {
+      background-image: url(https://images.pexels.com/photos/1388944/floor-flooring-hand-man-1388944.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }
+    45% {
+      background-image: url(https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }
+    60% {
+      background-image: url(https://images.pexels.com/photos/3807277/pexels-photo-3807277.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }
+    75% {
+      background-image: url(https://images.pexels.com/photos/2628105/pexels-photo-2628105.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }
+    90% {
+      background-image: url(https://images.pexels.com/photos/6368/art-wall-brush-painting.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }
+  }
+  /*# sourceMappingURL=MainPage.css.map */
