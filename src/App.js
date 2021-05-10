@@ -5,7 +5,7 @@ import Navbar from './component/NavbarDropdown/Navbar';
 import Footer from './component/Footer/Footer';
 import ImageSlider from './component/ImageSlider/ImageSlider';
 import {BrowserRouter as Router} from 'react-router-dom';
-import VideoSection from './component/VideoBackground/HeroSection';
+import VideoSection from './component/VideoBackground/VideoSection';
 
 function App() {
   return (
