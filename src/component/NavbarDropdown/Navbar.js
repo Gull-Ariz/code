@@ -148,15 +148,11 @@ function Navbar() {
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
                 </div>
                 <ul className={click ? 'navigationbar-menu active': 'navigationbar-menu'}>
-                    <li className='navigationbar-item'>
-                        <Link to='/' className="navigationbar-links" onClick={closeMobileMenu}>
-                            Home
-                         </Link>
-                    </li>
+                    
 
                     <li className='navigationbar-item'>
                         <Link to='/aboutus' className="navigationbar-links" onClick={closeMobileMenu}>
-                            AboutUs
+                            About
                          </Link>
                     </li>
 
