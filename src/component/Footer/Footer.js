@@ -6,48 +6,40 @@ const Footer=()=> {
             <div className="footer-middle">
                 <div className="container">
                     <div className="row">
-                    <div className="col-md-3 col-sm-6">
-                        <h3>Footer 1</h3>
+                    <div className="col-md-4 col-sm-6">
+                        <h3>Resources</h3>
                         <ul className="list-unstyled">
-                            <li><a href="">first</a></li>
-                            <li><a href="">second</a></li>
-                            <li><a href="">third</a></li>
-                            <li><a href="">fourth</a></li>
+                            <li><a href="">Customer Support</a></li>
+                            <li><a href="">Customer Stories</a></li>
+                            <li><a href="">Bussiness Resources</a></li>
+                            <li><a href="">HelpOnline Review</a></li>
                         </ul>
                     </div>
 
-                    <div className="col-md-3 col-sm-6">
-                        <h3>Footer 1</h3>
+                    <div className="col-md-4 col-sm-6">
+                        <h3>Usefull Links</h3>
                         <ul className="list-unstyled">
-                            <li><a href="">first</a></li>
-                            <li><a href="">second</a></li>
-                            <li><a href="">third</a></li>
-                            <li><a href="">fourth</a></li>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Contacts</a></li>
                         </ul>
                     </div>
 
-                    <div className="col-md-3 col-sm-6">
-                        <h3>Footer 1</h3>
+                    <div className="col-md-4 col-sm-6">
+                        <h3>Contact</h3>
                         <ul className="list-unstyled">
-                            <li><a href="">first</a></li>
-                            <li><a href="">second</a></li>
-                            <li><a href="">third</a></li>
-                            <li><a href="">fourth</a></li>
+                            <li><a href=""><i className="fas fa-home"/> Help Online PGSHS MohlanWall</a></li>
+                            <li><a href=""><i className="fas fa-at"/> helponline@gmail.com</a></li>
+                            <li><a href=""><i className="fas fa-phone"/> +92-333-1579872</a></li>
+                            <li><a href=""><i className="fas fa-envelope-open"/> helponline@hotmail.com</a></li>
                         </ul>
                     </div>
 
-                    <div className="col-md-3 col-sm-6">
-                        <h3>Footer 1</h3>
-                        <ul className="list-unstyled">
-                            <li><a href="">first</a></li>
-                            <li><a href="">second</a></li>
-                            <li><a href="/">third</a></li>
-                            <li><a href="">fourth</a></li>
-                        </ul>
-                    </div>
+                    
                 </div>
                     <div className="footer-bottom">
-                        <p className="text-xs-center">
+                        <p className="text-center">
                             &copy; Help Online 2021
                         </p>
                     </div>
