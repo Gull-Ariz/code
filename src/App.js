@@ -6,6 +6,7 @@ import Footer from './component/Footer/Footer';
 import ImageSlider from './component/ImageSlider/ImageSlider';
 import {BrowserRouter as Router} from 'react-router-dom';
 import VideoSection from './component/VideoBackground/VideoSection';
+import ParagraphSection from './component/Paragraph/ParagraphSection';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Router>
       <Navbar/>
       <VideoSection/>
+      <ParagraphSection/>
       <Footer/>
     </Router>
     

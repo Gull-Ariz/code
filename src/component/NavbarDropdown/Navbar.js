@@ -217,7 +217,7 @@ function Navbar() {
                     </li>
 
                 </ul>
-                <Button/>
+                <Button ButtonName="SignUp" cName="btn-signup"/>
             </nav>
         </>
     )

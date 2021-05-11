@@ -1,10 +1,8 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import './Dropdown.css'
-import {MenuItemsCarpanter, MenuItemsHandyMan, MenuItemsServices} from './MenuItems'
-import {MenuItemsPlumber} from './MenuItems'
-import {MenuItemsElectrician} from './MenuItems'
-import {MenuItemsPainting} from './MenuItems'
+import {MenuItemsCarpanter, MenuItemsHandyMan, MenuItemsServices,MenuItemsPlumber,MenuItemsElectrician,MenuItemsPainting} from './MenuItems'
+
 
 function DropdownHandyMan() {
     const [click,setClick]=useState(false)
