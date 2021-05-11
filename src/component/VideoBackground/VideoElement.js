@@ -31,3 +31,57 @@ export const Videos = styled.video`
     background:#232a34;
 `;
 
+
+export const VideoContent= styled.div`
+    z-index:3;
+    max-width:1200px;
+    position:absolute;
+    padding:8px 24px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+`
+
+export const VideoH1=styled.div`
+    color:#d2a2e0;
+    font-size:40px;
+    text-align:center;
+
+    @media screen and (max-width:1500px){
+        font-size:40px;
+    }
+    @media screen and (max-width:1200px){
+        font-size:32px;
+    }
+    @media screen and (max-width:768px){
+        font-size:28px;
+    }
+    
+    @media screen and (max-width:500px){
+        font-size:20px;
+    }
+    
+`
+
+export const VideoP=styled.div `
+    margin-top:24px;
+    color:#d2a2e0;
+    font-size:30px;
+    text-align:center;
+    max-width:600px;
+
+    @media screen and (max-width:1500px){
+        font-size:30px;
+    }
+
+    @media screen and (max-width:1200px){
+        font-size:24px;
+    }
+    @media screen and (max-width:768px){
+        font-size:18px;
+    }
+
+    @media screen and (max-width:480px){
+        font-size:18px;
+    }
+`
