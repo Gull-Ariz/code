@@ -10,9 +10,14 @@
 }
 
 
-.imgclass{
+.imgclass img{
     padding: 5px;
     border: 1px solid gray;
+    cursor: pointer;
+}
+
+.imgclass img:hover{
+    transform: translate(10px);   
 }
 
 .choseusparadiv p{

@@ -14,10 +14,10 @@ function ChoseUs() {
 
                 <div className="col-lg-8 col-md-8 col-sm-12">
                         
-                        	<div className="row">
-                        		<img src="../../../images/carpanter4.jpg" className="col-lg-4 col-md-4 col-sm-12 imgclass"/>
-                        		<img src="../../../images/electrician4.jpg" className="col-lg-4 col-md-4 col-sm-12 imgclass"/>
-                        		<img src="../../../images/plumber.jpg" className="col-lg-4 col-md-4 col-sm-12 imgclass"/>
+                        	<div className="row imgclass">
+                        		<img src="../../../images/carpanter4.jpg" className="col-lg-4 col-md-4 col-sm-12"/>
+                        		<img src="../../../images/electrician4.jpg" className="col-lg-4 col-md-4 col-sm-12"/>
+                        		<img src="../../../images/plumber.jpg" className="col-lg-4 col-md-4 col-sm-12"/>
                         	</div>
 
                         	<div className="row">

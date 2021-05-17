@@ -1,7 +1,5 @@
 import React from 'react'
-import Video from '../../videos/v3.mp4'
-import Video1 from '../../videos/video1.mp4'
-import {VideoArray} from './VideoArray'
+import Video from '../../../videos/v3.mp4'
 import {VideoContainer,VideoBg,Videos,VideoContent,VideoP,VideoH1} from './VideoElement'
 import Button from '../NavbarDropdown/Button'
 
