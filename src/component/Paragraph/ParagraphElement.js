@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 
 export const ParagraphContainer=styled.div `
-   background:#c5d9e6;
+   background:#fff;
     width:100vw;
     position:relative;
 `

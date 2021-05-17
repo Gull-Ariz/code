@@ -33,12 +33,12 @@ const Services = () => {
                         <p>We Assemble your Furniture, Fix Hinges & Locks and we also Make Gypsum Partition in Office & Apartment.</p>
                     </div>
                     <div className="extra-servicediv col-lg-4 col-md-4 col-12">
-                        <a href="#"><i className="fa-2x fas fa-paint-roller"/></a>
+                        <a href="#"><i className="fa-3x fas fa-plug"></i></a>
                         <h2>Electrical Service</h2>
                         <p>We can fix any kind of Electric Failure or Short Circuit, We Install New Sockets Lamp & Chandelier.</p>
                     </div>
                     <div className="extra-servicediv col-lg-4 col-md-4 col-12">
-                        <a href="#"><i className="fa-2x fas fa-paint-roller"/></a>
+                        <a href="#"><i className="fa-3x fas fa-paint-roller"/></a>
                         <h2>Painter Services</h2>
                         <p>We have Expert Painter for Interior Exterior Painting, End Tenancy Painting & Wallpaper Installation.</p>
                     </div>

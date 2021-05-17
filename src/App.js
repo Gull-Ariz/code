@@ -8,6 +8,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import VideoSection from './component/VideoBackground/VideoSection';
 import ParagraphSection from './component/Paragraph/ParagraphSection';
 import ServiceCard from './component/Services/Services';
+import ChoseUs from './component/Services/ChoseUs';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Navbar/>
       <VideoSection/>
       <ParagraphSection/>
+      <ChoseUs/>
       <ServiceCard/>
       <Footer/>
     </Router>

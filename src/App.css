@@ -4,6 +4,8 @@
   --mainLightGray:rgba(172,172,172);
   --mainWhite:#fff;
   --mainBlue:#007bff;
+  font-size: 15px;
+
 }
 *{
   box-sizing: border-box;
