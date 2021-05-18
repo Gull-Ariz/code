@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import './SignUp_LogIn.css';
+import Button from '../NavbarDropdown/Button';
 
 function SignUp_LogIN() {
     const [modalIsOpenSignUp, setModalIsOpenSignUp] = useState(false);
@@ -8,7 +9,8 @@ function SignUp_LogIN() {
     return (
         <>
         <h1>Hello</h1>
-            <button onClick={() => setModalIsOpenSignUp(true)} className="btn btn-lg btn-success">Signup</button>
+             <button onClick={() => setModalIsOpenSignUp(true)} className="btn btn-lg btn-success">Signup</button>
+            <Button onClick={() => setModalIsOpenSignUp(true)} cName="btn-signup" ButtonName="Signup" />
             <button onClick={() => setModalIsOpenLogin(true)} className="btn btn-lg btn-success">Login</button>
             <Modal isOpen={modalIsOpenSignUp} onRequestClose={() => setModalIsOpenSignUp(false)}>
                 <div className="form-structor mt-5">

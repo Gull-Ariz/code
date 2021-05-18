@@ -5,6 +5,8 @@ import VideoSection from './VideoBackground/VideoSection';
 import ParagraphComponent from './Paragraph/ParagraphComponent';
 import ChoseUs from './Services/ChoseUs';
 import ServiceCard from './Services/Services';
+import SignupLogin from './SignupLogin/SignUp_LogIn';
+import Login from './SignupLogin/Login';
 
 function HomePage() {
     return (
@@ -14,15 +16,14 @@ function HomePage() {
             <VideoSection/>
             <ParagraphComponent/>
             <ChoseUs/>
-            <ServiceCard/>
-            <Footer/>
+            <Login/>        
+             <ServiceCard/>
+             <Footer/>
+
         </div>
 
 
-        // <div>
-        //     <ParagraphComponent/>      
-        // </div>
-
+        
     )
 }
 
