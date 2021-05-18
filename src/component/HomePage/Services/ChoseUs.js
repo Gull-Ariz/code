@@ -8,11 +8,11 @@ function ChoseUs() {
         
             <div className='container'>
                 <div className="row">
-                    <div className="col-lg-4 col-md-6 col-sm-12 rightimgclass">
+                    <div className="col-lg-4 col-md-4 col-sm-12 rightimgclass">
                         <img src="https://www.mistribabu.com/images/MistriBabu-11.png"/>
                     </div>
 
-                <div className="col-lg-8 col-md-8 col-sm-12">
+                <div className="col-lg-8 col-md-12 col-sm-12">
                         
                         	<div className="row imgclass">
                         		<img src="../../../images/carpanter4.jpg" className="col-lg-4 col-md-4 col-sm-12"/>

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainParagraphdiv{
+    
+    padding: 30px;    
+}
+
+.container{
+    
+}
+
+.imgclassdiv{
+    
+    
+}
+
+.imgclassdiv img{
+    width: 400px;
+    height: 500px;
+    text-align: center;
+}
+
+
+.paragraphheadindiv{
+    text-align: center;
+}
+.paragraphheadindiv p{
+    font-size: 1.0rem;
+    line-height: 1.6;
+    word-spacing: 2px;
+    font-weight: 400;
+    color:#606060;
+    
+}
+
+
+.paragraphheadindiv h2{
+    font-size: 1.6rem;
+    margin: 20px 0 30px 0;
+    font-weight: bold;
+    line-height: 1.5;
+    word-spacing: 5px;
+    color:#606060;
+}

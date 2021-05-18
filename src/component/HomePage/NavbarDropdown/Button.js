@@ -4,7 +4,7 @@ import './Button.css'
 
 function Button(prop) {
     return (
-        <Link to='sign-up'>
+        <Link to={prop.domain}>
             <button className={prop.cName}> 
                 {prop.ButtonName}
             </button>

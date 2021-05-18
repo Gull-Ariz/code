@@ -1,6 +1,5 @@
 :root{
-    --primary:#1888ff;
-    --color-purpule:#d2a2e0;
+    
 }
 .btn-signup{
     padding: 8px 20px;
@@ -55,6 +54,10 @@
     color: rgb(15, 7, 7);
     cursor: pointer;
     background-color: var(--primary);
+
+    @media  screen{
+        
+    }
 }
 
 .btn-About:hover{
@@ -65,3 +68,5 @@
     border-radius: 6px;
     border: 2px solid var(--primary);
 }
+
+
