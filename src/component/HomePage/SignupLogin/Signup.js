@@ -1,7 +1,7 @@
 import React from 'react'
 import './Login.css'
 
-function Login() {
+function Signup() {
     return (
     
         
@@ -11,7 +11,7 @@ function Login() {
             <div className="sigin-signup"> 
                 <form>
                     <h2 className="title">
-                        Sign In
+                        Sign Up
                     </h2>
                     <div className="Input-field">
                         <i className="fas fa-user"></i>
@@ -23,8 +23,14 @@ function Login() {
                         <input type="password" placeholder="Password"/>
                     </div>
 
-                    <input type="submit" value="Login" className="btn-solid"/>
-                            <p className="social-text">Or Sigin in with Social Platform</p>
+
+                    <div className="Input-field">
+                        <i className="fas fa-at"></i>
+                        <input type="email" placeholder="Email"/>
+                    </div>
+
+                    <input type="submit" value="Signup" className="btn-solid"/>
+                            <p className="social-text">Or Sign up with Social Platform</p>
                             <div className="social-media">
                                 <a href="" className="social-icon">
                                     <i className="fab fa-facebook-f"></i>
@@ -47,4 +53,4 @@ function Login() {
     )
 }
 
-export default Login
+export default Signup

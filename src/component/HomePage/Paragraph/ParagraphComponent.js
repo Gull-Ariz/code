@@ -1,5 +1,5 @@
 import React from 'react'
-import ButtonAbout from './ButtonAboutus'
+import ButtonAbout from './Buttons'
 import './ParagraphComponent.css'
 
 function ParagraphComponent() {

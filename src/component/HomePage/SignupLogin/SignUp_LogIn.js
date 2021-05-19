@@ -10,7 +10,6 @@ function SignUp_LogIN() {
         <>
         <h1>Hello</h1>
              <button onClick={() => setModalIsOpenSignUp(true)} className="btn btn-lg btn-success">Signup</button>
-            <Button onClick={() => setModalIsOpenSignUp(true)} cName="btn-signup" ButtonName="Signup" />
             <button onClick={() => setModalIsOpenLogin(true)} className="btn btn-lg btn-success">Login</button>
             <Modal isOpen={modalIsOpenSignUp} onRequestClose={() => setModalIsOpenSignUp(false)}>
                 <div className="form-structor mt-5">

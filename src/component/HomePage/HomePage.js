@@ -16,7 +16,6 @@ function HomePage() {
             <VideoSection/>
             <ParagraphComponent/>
             <ChoseUs/>
-            <Login/>        
              <ServiceCard/>
              <Footer/>
 

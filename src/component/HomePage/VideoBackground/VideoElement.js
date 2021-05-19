@@ -8,7 +8,7 @@ export const VideoContainer = styled.div`
     padding:0 30px;
     height:720px;
     position:relative;
-    z-index:1;
+    z-index:0;
 `;
 
 

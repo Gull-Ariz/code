@@ -4,15 +4,26 @@
 	box-sizing: border-box;
 }
 
-.containerlogin{
+#containerlogin{
 	position: relative;
-	width: 30%;
-	min-height: 70vh;
+	width: 100%;
+	min-height: 80vh;
 	overflow: hidden;
 	background-color: #fff;
 	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
-	margin-top: 50px;
+	z-index: 0;
+	
 }
+
+@media screen and (max-width:768px ){
+	#containerlogin{
+		width: 150%;
+		min-height: 90vh;
+	}	
+}
+
+
+
 
 .forms-container{
 	position: absolute;
@@ -29,6 +40,8 @@ form{
 	justify-content: center;
 	flex-direction: column;
 }
+
+
 
 .title{
 	font-size: 2.2rem;

@@ -1,7 +1,7 @@
 import React from 'react'
 import Video from '../../../videos/v3.mp4'
 import {VideoContainer,VideoBg,Videos,VideoContent,VideoP,VideoH1} from './VideoElement'
-import Button from '../NavbarDropdown/Button'
+import ButtonRequest from '../Paragraph/Buttons';
 
 const VideoSection = () => {
     return (
@@ -12,7 +12,7 @@ const VideoSection = () => {
         <VideoContent>
                 <VideoP>WE ARE AVAILABLE FOR</VideoP>
                 <VideoH1>PLUMBING,CARPANTER,PAINTER,ELECTRICIAN</VideoH1>
-                <Button ButtonName="Request an Apointment" cName="btn-Request"/>
+                <ButtonRequest clsName='btn-Request'  btnName="Request and Appointment" domainname="/request"/>
             </VideoContent>
         </VideoContainer>
     )

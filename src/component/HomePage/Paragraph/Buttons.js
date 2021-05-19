@@ -1,8 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import './ButtonAboutus.css'
+import './Buttons.css'
 
-function ButtonAboutus(props) {
+function Buttons(props) {
     return (
         
             <Link to={props.domainname}>
@@ -13,4 +13,4 @@ function ButtonAboutus(props) {
     )
 }
 
-export default ButtonAboutus
+export default Buttons
