@@ -3,6 +3,7 @@ import {ButtonSignup,ButtonLogin} from './Button'
 import './Navbar.css'
 import {Link} from 'react-router-dom'
 import {DropdownHandyMan,DropdownPainting,DropdownPlumber,DropdownElectrician, DropdownCarpanter,DropdownServices} from './Dropdown'
+import {HandymanServices} from '../../SecondPage/Cards/CardServices';
 import ReactModal from 'react-modal';
 import Login from '../SignupLogin/Login';
 import './Button.css'
@@ -214,7 +215,7 @@ function Navbar() {
                         onMouseEnter={onMouseEnterServices}
                         onMouseLeave={onMouseLeaveServices}
                     >
-                        <Link to='/handyman' className="navigationbar-links" onClick={closeMobileMenu}>
+                        <Link  className="navigationbar-links" onClick={closeMobileMenu}>
                             Services<i className='fas fa-caret-down'/>
                          </Link>
                          {dropdownservices && <DropdownServices/>}
