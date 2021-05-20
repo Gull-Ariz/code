@@ -1,9 +1,11 @@
 import React, {useState} from 'react'
-import Button from './Button'
+import {ButtonSignup,ButtonLogin} from './Button'
 import './Navbar.css'
 import {Link} from 'react-router-dom'
 import {DropdownHandyMan,DropdownPainting,DropdownPlumber,DropdownElectrician, DropdownCarpanter,DropdownServices} from './Dropdown'
-
+import ReactModal from 'react-modal';
+import Login from '../SignupLogin/Login';
+import './Button.css'
 
 
 
@@ -17,6 +19,8 @@ function Navbar() {
     const [dropdownpainter,setDropdownPainter]=useState(false)
     const [dropdowncarpanter,setDropdownCarpanter]=useState(false)
     const [dropdownservices,setDropdownServices]=useState(false)
+    
+    const [modalIsOpenSignUp, setModalIsOpenSignUp] = useState(false);
     
     
 
@@ -216,8 +220,11 @@ function Navbar() {
                          {dropdownservices && <DropdownServices/>}
                     </li>
 
+                    <li className='navigationbar-item'>
+                        <ButtonLogin ButtonName="Login" cName="btn-signup" domain="/login"></ButtonLogin>
+                    </li>
                 </ul>
-                <Button ButtonName="SignUp" cName="btn-signup"/>
+                <ButtonSignup ButtonName="SignUp" cName="btn-signup" domain="/signup"></ButtonSignup>
             </nav>
         </>
     )

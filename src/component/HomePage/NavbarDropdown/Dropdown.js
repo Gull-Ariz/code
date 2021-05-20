@@ -117,7 +117,7 @@ function DropdownCarpanter() {
     const handleClick=()=>setClick(!click)
     
     return (
-        <>
+        
            
             <ul className={click ? 'navbar-dropdown-menu click' : 'navbar-dropdown-menu'}>
                 {MenuItemsCarpanter.map((item,index)=>{
@@ -133,7 +133,7 @@ function DropdownCarpanter() {
                     )
                 })}
             </ul> 
-        </>
+        
     )
 }
 
@@ -144,9 +144,7 @@ function DropdownServices() {
     const handleClick=()=>setClick(!click)
     
     return (
-        <>
-           
-            <ul className={click ? 'navbar-dropdown-menu click' : 'navbar-dropdown-menu'}>
+        <ul className={click ? 'navbar-dropdown-menu click' : 'navbar-dropdown-menu'}>
                 {MenuItemsServices.map((item,index)=>{
                     return(
                         <li key={index}>
@@ -160,7 +158,7 @@ function DropdownServices() {
                     )
                 })}
             </ul> 
-        </>
+        
     )
 }
 

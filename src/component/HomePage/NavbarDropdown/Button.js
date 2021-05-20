@@ -3,10 +3,11 @@ import {Link} from 'react-router-dom'
 import './Button.css'
 import ReactModal from 'react-modal';
 import Signup from '../SignupLogin/Signup';
+import Login from '../SignupLogin/Login';
 
 
 
-function Button(prop) {
+function ButtonSignup(prop) {
     const [modalIsOpenSignUp, setModalIsOpenSignUp] = useState(false);
     return (
         <Link to={prop.domain}>
@@ -24,4 +25,24 @@ function Button(prop) {
         </Link>
     )
 }
-export default Button;
+
+function ButtonLogin(prop) {
+    const [modalIsOpenLogin, setModalIsOpenLogin] = useState(false);
+    return (
+        <Link to={prop.domain}>
+            <button 
+                onClick={() => setModalIsOpenLogin(true)}
+                className={prop.cName}> 
+                {prop.ButtonName}
+            </button>
+            <div className="miandivmodal">
+            <ReactModal isOpen={modalIsOpenLogin} onRequestClose={() => setModalIsOpenLogin(false)}  className="Modal" >
+                    <Login/>
+            </ReactModal>
+            </div>
+            
+        </Link>
+    )
+}
+
+export  {ButtonSignup,ButtonLogin}

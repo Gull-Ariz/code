@@ -37,7 +37,7 @@
   .navigationbar-item {
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 80px;
   }
   
   .navigationbar-links {
@@ -144,6 +144,8 @@
     }
   
     button {
-      display: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
