@@ -165,7 +165,7 @@ function Navbar() {
                         onMouseEnter={onMouseEnterHandyMan}
                         onMouseLeave={onMouseLeaveHandyMan}
                     >
-                        <Link to='/handyman' className="navigationbar-links" onClick={closeMobileMenu}>
+                        <Link  className="navigationbar-links" onClick={closeMobileMenu}>
                             Handyman<i className='fas fa-caret-down'/>
                          </Link>
                          {dropdownhandyman && <DropdownHandyMan/>}
@@ -175,7 +175,7 @@ function Navbar() {
                         onMouseEnter={onMouseEnterPlumber}
                         onMouseLeave={onMouseLeavePlumber}
                     >
-                        <Link to='/plumber' className="navigationbar-links" onClick={closeMobileMenu}>
+                        <Link  className="navigationbar-links" onClick={closeMobileMenu}>
                             Plumber<i className='fas fa-caret-down'/>
                          </Link>
                          {dropdownplumber && <DropdownPlumber/>}
@@ -185,7 +185,7 @@ function Navbar() {
                         onMouseEnter={onMouseEnterElectrician}
                         onMouseLeave={onMouseLeaveElectrician}
                     >
-                        <Link to='/handyman' className="navigationbar-links" onClick={closeMobileMenu}>
+                        <Link  className="navigationbar-links" onClick={closeMobileMenu}>
                             Electrician<i className='fas fa-caret-down'/>
                          </Link>
                          {dropdownelectrician && <DropdownElectrician/>}
@@ -195,7 +195,7 @@ function Navbar() {
                         onMouseEnter={onMouseEnterPainter}
                         onMouseLeave={onMouseLeavePainter}
                     >
-                        <Link to='/handyman' className="navigationbar-links" onClick={closeMobileMenu}>
+                        <Link  className="navigationbar-links" onClick={closeMobileMenu}>
                             Painter<i className='fas fa-caret-down'/>
                          </Link>
                          {dropdownpainter && <DropdownPainting/>}
@@ -205,7 +205,7 @@ function Navbar() {
                         onMouseEnter={onMouseEnterCarpanter}
                         onMouseLeave={onMouseLeaveCarpanter}
                     >
-                        <Link to='/handyman' className="navigationbar-links" onClick={closeMobileMenu}>
+                        <Link  className="navigationbar-links" onClick={closeMobileMenu}>
                             Carpanter<i className='fas fa-caret-down'/>
                          </Link>
                          {dropdowncarpanter && <DropdownCarpanter/>}
@@ -222,10 +222,10 @@ function Navbar() {
                     </li>
 
                     <li className='navigationbar-item'>
-                        <ButtonLogin ButtonName="Login" cName="btn-signup" domain="/login"></ButtonLogin>
+                        <ButtonLogin ButtonName="Login" cName="btn-signup"></ButtonLogin>
                     </li>
                 </ul>
-                <ButtonSignup ButtonName="SignUp" cName="btn-signup" domain="/signup"></ButtonSignup>
+                <ButtonSignup ButtonName="SignUp" cName="btn-signup"></ButtonSignup>
             </nav>
         </>
     )

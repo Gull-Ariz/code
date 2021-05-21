@@ -188,12 +188,12 @@ export const MenuItemsCarpanter=[
 export const MenuItemsServices=[
     {
         title:'Interior Design',
-        path:'/services',
+        path:'/Interior',
         cName:'navbar-dropdown-links'    
     },
     {
         title:'Construction',
-        path:'/services',
+        path:'/construction',
         cName:'navbar-dropdown-links'    
     },
     {
@@ -218,7 +218,7 @@ export const MenuItemsServices=[
     },
     {
         title:'AC Services',
-        path:'/services',
+        path:'/acservice',
         cName:'navbar-dropdown-links'    
     },
     {

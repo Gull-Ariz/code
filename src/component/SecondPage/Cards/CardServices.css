@@ -7,8 +7,7 @@
 .cardheaderdiv{
     width: 100%;
     height: 100px;
-    margin-top: 80px;
-    background: black;
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
     line-height: 100px;
     position: relative;    
 }
