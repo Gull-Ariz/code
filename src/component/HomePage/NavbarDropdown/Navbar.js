@@ -166,7 +166,7 @@ function Navbar() {
                         onMouseLeave={onMouseLeaveHandyMan}
                     >
                         <Link  className="navigationbar-links" onClick={closeMobileMenu}>
-                            Handyman<i className='fas fa-caret-down'/>
+                            Handyman
                          </Link>
                          {dropdownhandyman && <DropdownHandyMan/>}
                     </li>
@@ -176,7 +176,7 @@ function Navbar() {
                         onMouseLeave={onMouseLeavePlumber}
                     >
                         <Link  className="navigationbar-links" onClick={closeMobileMenu}>
-                            Plumber<i className='fas fa-caret-down'/>
+                            Plumber
                          </Link>
                          {dropdownplumber && <DropdownPlumber/>}
                     </li>
@@ -186,7 +186,7 @@ function Navbar() {
                         onMouseLeave={onMouseLeaveElectrician}
                     >
                         <Link  className="navigationbar-links" onClick={closeMobileMenu}>
-                            Electrician<i className='fas fa-caret-down'/>
+                        Electrician
                          </Link>
                          {dropdownelectrician && <DropdownElectrician/>}
                     </li>
@@ -196,7 +196,7 @@ function Navbar() {
                         onMouseLeave={onMouseLeavePainter}
                     >
                         <Link  className="navigationbar-links" onClick={closeMobileMenu}>
-                            Painter<i className='fas fa-caret-down'/>
+                            Painter
                          </Link>
                          {dropdownpainter && <DropdownPainting/>}
                     </li>
@@ -206,7 +206,7 @@ function Navbar() {
                         onMouseLeave={onMouseLeaveCarpanter}
                     >
                         <Link  className="navigationbar-links" onClick={closeMobileMenu}>
-                            Carpanter<i className='fas fa-caret-down'/>
+                            Carpanter
                          </Link>
                          {dropdowncarpanter && <DropdownCarpanter/>}
                     </li>
@@ -216,13 +216,13 @@ function Navbar() {
                         onMouseLeave={onMouseLeaveServices}
                     >
                         <Link  className="navigationbar-links" onClick={closeMobileMenu}>
-                            Services<i className='fas fa-caret-down'/>
+                            Services
                          </Link>
                          {dropdownservices && <DropdownServices/>}
                     </li>
 
                     <li className='navigationbar-item'>
-                        <ButtonLogin ButtonName="Login" cName="btn-signup"></ButtonLogin>
+                        <ButtonLogin ButtonName="Login" cName="btn-login"></ButtonLogin>
                     </li>
                 </ul>
                 <ButtonSignup ButtonName="SignUp" cName="btn-signup"></ButtonSignup>

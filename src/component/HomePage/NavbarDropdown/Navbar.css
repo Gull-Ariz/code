@@ -44,7 +44,9 @@
   .navigationbar-links {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: .5rem 1rem;
+    margin-top: 1.5rem;
+    
   }
   
   .navigationbar-links:hover {
