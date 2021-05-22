@@ -39,3 +39,9 @@
     word-spacing: 5px;
     color:#606060;
 }
+
+p.firstletter::first-letter{
+    color:black;
+    font-size: 3rem;
+    margin: 0 2px 0 0;
+}

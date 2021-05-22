@@ -1,6 +1,7 @@
 import React from 'react'
 import './CardServices.css'
 import Navbar from '../../HomePage/NavbarDropdown/Navbar';
+import {Link} from 'react-router-dom';
 
 function ElectricianServices() {
     return (
@@ -33,7 +34,7 @@ function ElectricianServices() {
                 </div>
                 <div className="row">
                     <div className="col-12 cardbuttonclassdiv">
-                        <a href="/">Contact</a>
+                        <Link to="/contact">Contact</Link>
                     </div>
                 </div>
             </div>
@@ -80,7 +81,7 @@ function PlumberServices() {
                 </div>
                 <div className="row">
                     <div className="col-12 cardbuttonclassdiv">
-                        <a href="/">Contact</a>
+                    <Link to="/contact">Contact</Link>
                     </div>
                 </div>
             </div>
@@ -125,7 +126,7 @@ function PaintingServices() {
                 </div>
                 <div className="row">
                     <div className="col-12 cardbuttonclassdiv">
-                        <a href="/">Contact</a>
+                    <Link to="/contact">Contact</Link>
                     </div>
                 </div>
             </div>
@@ -168,7 +169,7 @@ function CarpanterServices() {
                 </div>
                 <div className="row">
                     <div className="col-12 cardbuttonclassdiv">
-                        <a href="/">Contact</a>
+                    <Link to="/contact">Contact</Link>
                     </div>
                 </div>
             </div>
@@ -211,7 +212,7 @@ function InteriorDesignServices() {
                 </div>
                 <div className="row">
                     <div className="col-12 cardbuttonclassdiv">
-                        <a href="/">Contact</a>
+                    <Link to="/contact">Contact</Link>
                     </div>
                 </div>
             </div>
@@ -255,7 +256,7 @@ function ConstructionServices() {
                 </div>
                 <div className="row">
                     <div className="col-12 cardbuttonclassdiv">
-                        <a href="/">Contact</a>
+                    <Link to="/contact">Contact</Link>
                     </div>
                 </div>
             </div>
@@ -298,7 +299,7 @@ function HandymanServices() {
                 </div>
                 <div className="row">
                     <div className="col-12 cardbuttonclassdiv">
-                        <a href="/">Contact</a>
+                    <Link to="/contact">Contact</Link>
                     </div>
                 </div>
             </div>
@@ -343,7 +344,7 @@ function AcServices() {
                 </div>
                 <div className="row">
                     <div className="col-12 cardbuttonclassdiv">
-                        <a href="/">Contact</a>
+                    <Link to="/contact">Contact</Link>
                     </div>
                 </div>
             </div>

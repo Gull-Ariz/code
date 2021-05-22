@@ -14,8 +14,8 @@ function ParagraphComponent() {
                         <h2>
                         COMPLETE MAINTENANCE AND REPAIRING SOLUTIONS
                         </h2>
-                        <p>
-                        MistriBabu is your one-stop solution to sort all your Apartment, Villa, Office and other needs ranging from civil construction to maintenance work, quickly, professionally and conveniently. Our commitment to bring professionalism, good service and trust to the Residential, Commercial and Industrial sectors.
+                        <p className="firstletter">
+                        HelpOnline is your one-stop solution to sort all your Apartment, Villa, Office and other needs ranging from civil construction to maintenance work, quickly, professionally and conveniently. Our commitment to bring professionalism, good service and trust to the Residential, Commercial and Industrial sectors.
                         </p>
                         <p>
                         We deliver your work by verified & qualified professionals only. Our services providing in Plumber, Electrician, Painter, Carpenter, Interior design, Tiling, Masonry, Cleaning etc.
