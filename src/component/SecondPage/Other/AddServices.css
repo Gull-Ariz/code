@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainformdiv{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.innerformdiv{
+    width: 25vw;
+    height: 75vh;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    z-index: 2;
+    background-image:linear-gradient(to right,#D0ECE7 0%,#AED6F1 );
+}
+
+.innerformdiv input{
+    width: 22vw;
+    height: 5vh;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+}
+
+
+
+.innerformdiv textarea{
+    width: 22vw;
+    height: 30vh;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    }
+
+.text-center{
+    color: #333;
+    margin-top: 40px;
+}
+
+.submit-btn{
+    padding: 25px;
+    width: 150px;
+    height: 10px;
+    color: #333;
+    border-radius: 15px;
+    background: #E6B0AA;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    margin: 10px 0;
+    transition: all 0.5s ease ;
+    
+}
+
+.submit-btn:hover{
+    background: #CD6155;
+}
+
+
+
+@media screen and (max-width:800px ){
+	
+    .innerformdiv{
+		width: 65vw;
+		min-height: 75vh;
+        
+	}
+    
+    .innerformdiv input{
+        width: 40vw;
+        height: 5vh;
+        padding: 5px;
+        margin: 10px;
+        outline: none;
+    }
+
+    .innerformdiv textarea{
+        width: 40vw;
+        height: 30vh;
+        padding: 10px;
+        outline: none;
+        margin-bottom: 20px;
+        }
+    
+}
+
+
+
+
+

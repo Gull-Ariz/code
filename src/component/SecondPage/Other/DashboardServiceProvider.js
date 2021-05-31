@@ -1,7 +1,10 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './DashboardService.css';
+import ReactModal from 'react-modal';
+import AddServices from './AddServices';
 
 function DashboardServiceProvider() {
+    const [modalIsOpenAddServiceForm, setModalIsOpenAddServiceForm] = useState(false);
     return (
         <div>
             <input type="checkbox" id="check"/>
@@ -34,11 +37,16 @@ function DashboardServiceProvider() {
                     <img src="../../../images/ac.jpeg"/>
                     <h4>Muhammad Hamza Yousaf</h4>
                 </center>
-                <a href="#"><i className="fas fa-plus"></i><span>Add Service</span></a>
+                <a href="#" onClick={() => setModalIsOpenAddServiceForm(true)}><i className="fas fa-plus"></i><span>Add Service</span></a>
                 <a href="#"><i className="fas fa-edit"></i><span>Update Service</span></a>
                 <a href="#"><i className="fas fa-trash-alt"></i><span>Remove Service</span></a>
                 <a href="#"><i className="fas fa-envelope"></i><span>Messages</span></a>
 	        </div>
+            <div>
+            <ReactModal isOpen={modalIsOpenAddServiceForm} onRequestClose={() => setModalIsOpenAddServiceForm(false)}  className="Modal" >
+                    <AddServices/>
+            </ReactModal>
+            </div>
 
 	
             <div className="services">

@@ -10,7 +10,7 @@ import Login from './component/HomePage/SignupLogin/Login';
 import Contact from './component/SecondPage/Other/Contact';
 import ContactPage from './component/SecondPage/Other/ContactPage';
 import DasboardService from './component/SecondPage/Other/DashboardServiceProvider';
-
+import AddService from './component/SecondPage/Other/AddServices';
 
 function App() {
   return (
@@ -32,6 +32,8 @@ function App() {
       
     </Switch>
    </BrowserRouter>
+
+    
     
     
   );
