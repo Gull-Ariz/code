@@ -7,10 +7,10 @@ function ParagraphComponent() {
         <div className='mainParagraphdiv'>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-6 col-sm-12 imgclassdiv">
+                    <div className="col-lg-6 col-md-12 col-sm-12 imgclassdiv">
                         <img src="../../../images/service2.png"/>
                     </div>
-                    <div className="col-lg-6 col-md-6 col-sm-12 paragraphheadindiv">
+                    <div className="col-lg-6 col-md-12 col-sm-12 paragraphheadindiv">
                         <h2>
                         COMPLETE MAINTENANCE AND REPAIRING SOLUTIONS
                         </h2>

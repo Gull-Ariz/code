@@ -51,7 +51,7 @@ function Contact() {
 
 
                         <div className="inputdiv">
-                            <input type="text" placeholder="Description of the Service"/>
+                            <textarea placeholder="Descripition of the Services"/>
                         </div>
 
                         <button>Submit</button>

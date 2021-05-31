@@ -8,6 +8,7 @@ import Card from './component/SecondPage/Cards/Cards';
 import {ElectricianServices,PlumberServices,PaintingServices,CarpanterServices,InteriorDesignServices,ConstructionServices,HandymanServices,AcServices} from './component/SecondPage/Cards/CardServices';
 import Login from './component/HomePage/SignupLogin/Login';
 import Contact from './component/SecondPage/Other/Contact';
+import ContactPage from './component/SecondPage/Other/ContactPage';
 
 
 
@@ -25,7 +26,7 @@ function App() {
       <Route path="/carpanters" exact component={CarpanterServices}/>
       <Route path="/plumber" exact component={PlumberServices}/>
       <Route path="/Interior" exact component={InteriorDesignServices}/>
-      <Route path="/contact" exact component={Contact}/>
+      <Route path="/contact" exact component={ContactPage}/>
 
       
     </Switch>

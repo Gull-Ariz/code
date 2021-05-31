@@ -8,9 +8,10 @@
     box-shadow: 0 0 3px 0 rgba(0,0,0,1);
     margin-top: 50px;
     margin-bottom: 50px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
 }
 
 
@@ -44,6 +45,15 @@
     outline: none;
     margin: 10px 0;
     
+}
+
+.inputdiv textarea{
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    resize: vertical;
+    outline: none;
+    margin: 10px 0;
 }
 
 
