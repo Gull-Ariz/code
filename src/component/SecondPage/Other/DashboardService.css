@@ -1,0 +1,173 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+header{
+	display: flex;
+    align-items: center;
+    justify-content:space-between;
+	background: #22242a;
+	padding: 10px;
+	width: 100%;
+	height: 70px;
+    z-index: 2;
+}
+
+.left-area  h3{
+	color: #fff;
+    margin-left: 5px;
+    text-transform: uppercase;
+	font-size: 22px;
+	font-weight: 900;
+    height: 100%;
+}
+
+.left-area h3:hover{
+    color: #1DC4E7;
+}
+
+.left-area a{
+    text-decoration: none;
+}
+
+
+
+.left-area span{
+	color: #1DC4E7;
+}
+
+.left-area span:hover{
+    color: #fff;
+}
+
+.logout-btn{
+	padding: 5px;
+	background:#19B3D3;
+	text-decoration: none;
+	margin-right: 40px;
+	border-radius: 2px;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.logout-btn:hover{
+	text-decoration: none;
+	background: #0D9DBB;
+	color: #fff;
+}
+
+
+.slidebar{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	left: 0;
+	width: 250px;
+	height: 100vh;
+	background: #2F323A;
+	padding-top: 50px;
+	transition: 0.5s;
+	transition-property:left ;
+}
+
+.slidebar img{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.slidebar h4{
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.slidebar a{
+	display: block;
+	color: #fff;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	padding-left: 40px;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+
+
+.slidebar a:hover{
+	background: #19B3D3;
+}
+
+
+.slidebar i{
+    padding: 10px;
+}
+
+label #slidebar-btn{
+	color: #fff;
+	z-index: 1;
+	cursor: pointer;
+	font-size: 20px;
+	margin: 5px 0;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+
+label #slidebar-btn:hover{
+	color: #19B3D3;
+}
+
+#check:checked ~ .slidebar{
+	width: 120px;
+}
+
+#check:checked ~ .slidebar img{
+    width: 100px;
+    height: 100px;
+}
+
+#check:checked ~ .slidebar a span{
+	display: none;
+}
+
+
+
+#check:checked ~ .slidebar a i{
+    font-size: 22px;
+    
+}
+
+
+
+#check:checked ~ .slidebar h4{
+	display: none;
+}
+
+.services{
+	margin-left: 250px;
+	transition: 0.5s;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+
+.services img{
+    width: 300px;
+    height: 300px;
+}
+
+#check:checked ~ .services{
+	margin-left: 120px;
+}
+
+#check{
+	display: none;
+}

@@ -9,7 +9,7 @@ import {ElectricianServices,PlumberServices,PaintingServices,CarpanterServices,I
 import Login from './component/HomePage/SignupLogin/Login';
 import Contact from './component/SecondPage/Other/Contact';
 import ContactPage from './component/SecondPage/Other/ContactPage';
-
+import DasboardService from './component/SecondPage/Other/DashboardServiceProvider';
 
 
 function App() {
@@ -27,6 +27,7 @@ function App() {
       <Route path="/plumber" exact component={PlumberServices}/>
       <Route path="/Interior" exact component={InteriorDesignServices}/>
       <Route path="/contact" exact component={ContactPage}/>
+      <Route path="/dashboard" exact component={DasboardService}/>
 
       
     </Switch>
