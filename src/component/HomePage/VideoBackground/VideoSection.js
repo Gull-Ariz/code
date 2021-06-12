@@ -10,8 +10,8 @@ const VideoSection = () => {
                 <Videos autoPlay loop muted src={Video} type='video/mp4'/>
             </VideoBg>       
         <VideoContent>
-                <VideoP>WE ARE AVAILABLE FOR</VideoP>
-                <VideoH1>PLUMBING,CARPANTER,PAINTER,ELECTRICIAN</VideoH1>
+                <VideoP>HOME MAINTENANCE MADE EASY!!</VideoP>
+                <VideoH1>Bridging the gap between the users and the providers of home maintenance and handyman services in the most hassle-free, quick, and cost-effective way.</VideoH1>
                 <ButtonRequest clsName='btn-Request'  btnName="Request and Appointment" domainname="/request"/>
             </VideoContent>
         </VideoContainer>

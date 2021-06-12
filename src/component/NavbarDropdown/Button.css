@@ -1,0 +1,44 @@
+:root{
+    --primary:#1888ff;
+    --color-purpule:#d2a2e0;
+}
+.btn-signup{
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background-color: var(--primary);
+}
+
+.btn-signup:hover{
+    padding: 6px 18px;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid var(--primary);
+}
+
+.btn-Request{
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background-color: var(--color-purpule);
+}
+
+.btn-Request:hover{
+    padding: 12px 24px;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid var(--color-purpule);
+}

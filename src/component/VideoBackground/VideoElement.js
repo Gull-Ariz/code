@@ -8,15 +8,15 @@ export const VideoContainer = styled.div`
     padding:0 30px;
     height:720px;
     position:relative;
-    z-index:0;
+    z-index:1;
 `;
 
 
 export const VideoBg = styled.div`
     position:absolute;
     top:0;
-    left:0;
     right:0;
+    left:0;
     bottom:0;
     width:100%;
     height:100%;
@@ -32,7 +32,7 @@ export const Videos = styled.video`
 `;
 
 
-export const VideoContent = styled.div`
+export const VideoContent= styled.div`
     z-index:3;
     max-width:1200px;
     position:absolute;
@@ -42,28 +42,28 @@ export const VideoContent = styled.div`
     align-items:center;
 `
 
-export const VideoH1 = styled.div`
+export const VideoH1=styled.div`
     color:#d2a2e0;
-    font-size:20px;
+    font-size:40px;
     text-align:center;
 
     @media screen and (max-width:1500px){
-        font-size:20px;
+        font-size:40px;
     }
     @media screen and (max-width:1200px){
-        font-size:16px;
+        font-size:32px;
     }
     @media screen and (max-width:768px){
-        font-size:14px;
+        font-size:28px;
     }
     
     @media screen and (max-width:500px){
-        font-size:10px;
+        font-size:20px;
     }
     
 `
 
-export const VideoP = styled.div`
+export const VideoP=styled.div `
     margin-top:24px;
     color:#d2a2e0;
     font-size:30px;

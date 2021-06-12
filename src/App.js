@@ -28,7 +28,6 @@ function App() {
       <Route path="/Interior" exact component={InteriorDesignServices}/>
       <Route path="/contact" exact component={ContactPage}/>
       <Route path="/dashboard" exact component={DasboardService}/>
-
       
     </Switch>
    </BrowserRouter>

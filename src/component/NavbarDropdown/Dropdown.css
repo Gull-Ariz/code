@@ -1,0 +1,34 @@
+.navbar-dropdown-menu{
+    width: auto;
+    position: absolute;
+    top: 80px;
+    list-style: none;
+    text-align: start;
+    z-index: 2;
+}
+
+.navbar-dropdown-menu li{
+    background: #fff;
+    cursor: pointer;
+        
+}
+
+.navbar-dropdown-menu li:hover{
+    background: #b9bec4;
+    
+}
+
+.navbar-dropdown-menu.clicked{
+    display: none;
+    }
+
+.navbar-dropdown-links{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    display:block;
+    text-decoration:none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 10px;
+}
