@@ -210,8 +210,7 @@ function Navbar() {
                     </li>
 
                     <li className='navigationbar-item'
-                        onMouseEnter={onMouseEnterServices}
-                        onMouseLeave={onMouseLeaveServices}
+                        
                     >
                         <Link to={"./Cards"} className="navigationbar-links">
                             Services<i className='fas fa-caret-down' />

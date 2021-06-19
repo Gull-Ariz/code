@@ -19,7 +19,7 @@ function SignUp_LogIN() {
                             <input type="email" className="input" placeholder="Email" />
                             <input type="password" className="input" placeholder="Password" />
                         </div>
-                        <button className="submit-btn">Sign up</button>
+                        <button className="btn-solid">Sign up</button>
                     </div>
                 </div>
             </Modal>
@@ -31,7 +31,7 @@ function SignUp_LogIN() {
                                 <input type="email" className="input" placeholder="Email" />
                                 <input type="password" className="input" placeholder="Password" />
                             </div>
-                            <button className="submit-btn">Log in</button>
+                            <button className="btn-solid">Log in</button>
                         </div>
                     </div>
                 </div>

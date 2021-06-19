@@ -63,20 +63,20 @@ export default function Login(props) {
                             <h2 className="title">
                                 Sign In
                             </h2>
-                            <div className="form-group Input-field">
+                            <div className="Input-field">
                                 <i className="fas fa-user"></i>
-                                <input className={"form-control"} placeholder="Email" name="email"
+                                <input className={""} placeholder="Email" name="email"
                                     value={values1.email} onChange={handleInputChange} />
                             </div>
 
-                            <div className="form-group Input-field">
+                            <div className="Input-field">
                                 <i className="fas fa-lock"></i>
-                                <input type="password" className="form-control" placeholder="Password" name="password"
+                                <input type="password" className={""} placeholder="Password" name="password"
                                     value={values1.password} onChange={handleInputChange} />
                             </div>
 
                             <div className="form-group">
-                                <button onClick={handleSubmit} type="submit" className="btn btn-light">Submit</button>
+                                <button onClick={handleSubmit} type="submit" className="btn-solid">Submit</button>
                             </div>
                         </form>
                     </div>
