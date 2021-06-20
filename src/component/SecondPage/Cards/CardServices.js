@@ -1,8 +1,9 @@
 import React from 'react'
 import './CardServices.css'
 import Navbar from '../../HomePage/NavbarDropdown/Navbar';
+import Footer from '../../HomePage/Footer/Footer';
 import {Link} from 'react-router-dom';
-import {HandyManData,PlumberData} from './ServiceData';
+import {HandyManData,PlumberData,ElectricianData,PaintingData,CarpanterData,ACData} from './ServiceData';
 
 function ElectricianServices() {
     return (
@@ -24,7 +25,7 @@ function ElectricianServices() {
         </div>
         <div className="container" id="containerid">
             <div className="row">
-                {HandyManData.map((item,index)=>{
+                {ElectricianData.map((item,index)=>{
                     return(
                         <div key={index}>
                                 <div className="col-lg-4 col-md-6 col-12">
@@ -44,6 +45,7 @@ function ElectricianServices() {
                 })}                
             </div>
         </div>
+        <Footer/>
       </>  
 )
 }
@@ -90,6 +92,7 @@ function PlumberServices() {
                 })}                
             </div>
         </div>
+        <Footer/>
       </>  
 )
 }
@@ -116,7 +119,7 @@ function PaintingServices() {
         </div>
         <div className="container" id="containerid">
             <div className="row">
-                {HandyManData.map((item,index)=>{
+                {PaintingData.map((item,index)=>{
                     return(
                         <div key={index}>
                                 <div className="col-lg-4 col-md-6 col-12">
@@ -136,6 +139,7 @@ function PaintingServices() {
                 })}                
             </div>
         </div>
+        <Footer/>
       </>  
 )
 }
@@ -161,7 +165,7 @@ function CarpanterServices() {
         </div>
         <div className="container" id="containerid">
             <div className="row">
-                {HandyManData.map((item,index)=>{
+                {CarpanterData.map((item,index)=>{
                     return(
                         <div key={index}>
                                 <div className="col-lg-4 col-md-6 col-12">
@@ -181,6 +185,7 @@ function CarpanterServices() {
                 })}                
             </div>
         </div>
+        <Footer/>
       </>  
 )
 }
@@ -233,6 +238,7 @@ function HandymanServices() {
                     })}                
                 </div>
             </div>
+            <Footer/>
           </>  
     )
 }
@@ -258,7 +264,7 @@ function AcServices() {
         </div>
         <div className="container" id="containerid">
             <div className="row">
-                {HandyManData.map((item,index)=>{
+                {ACData.map((item,index)=>{
                     return(
                         <div key={index}>
                                 <div className="col-lg-4 col-md-6 col-12">
@@ -278,6 +284,7 @@ function AcServices() {
                 })}                
             </div>
         </div>
+        <Footer/>
       </>  
 )
 }
