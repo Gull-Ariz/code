@@ -165,60 +165,55 @@ function Navbar() {
                         onMouseEnter={onMouseEnterHandyMan}
                         onMouseLeave={onMouseLeaveHandyMan}
                     >
-                        <Link  className="navigationbar-links" onClick={closeMobileMenu}>
+                        <Link  className="navigationbar-links" to="/handyman">
                             Handyman
                          </Link>
-                         {dropdownhandyman && <DropdownHandyMan/>}
+                         
                     </li>
 
                     <li className='navigationbar-item' 
                         onMouseEnter={onMouseEnterPlumber}
                         onMouseLeave={onMouseLeavePlumber}
                     >
-                        <Link  className="navigationbar-links" onClick={closeMobileMenu}>
+                        <Link  className="navigationbar-links" to="/plumber">
                             Plumber
                          </Link>
-                         {dropdownplumber && <DropdownPlumber/>}
+                         
                     </li>
 
                     <li className='navigationbar-item' 
-                        onMouseEnter={onMouseEnterElectrician}
-                        onMouseLeave={onMouseLeaveElectrician}
                     >
-                        <Link  className="navigationbar-links" onClick={closeMobileMenu}>
+                        <Link  className="navigationbar-links" to="electrician">
                         Electrician
                          </Link>
-                         {dropdownelectrician && <DropdownElectrician/>}
+                         
                     </li>
 
                     <li className='navigationbar-item' 
-                        onMouseEnter={onMouseEnterPainter}
-                        onMouseLeave={onMouseLeavePainter}
+                        
                     >
-                        <Link  className="navigationbar-links" onClick={closeMobileMenu}>
+                        <Link  className="navigationbar-links" to="painting">
                             Painter
                          </Link>
-                         {dropdownpainter && <DropdownPainting/>}
+                         
                     </li>
 
                     <li className='navigationbar-item' 
-                        onMouseEnter={onMouseEnterCarpanter}
-                        onMouseLeave={onMouseLeaveCarpanter}
+                        
                     >
-                        <Link  className="navigationbar-links" onClick={closeMobileMenu}>
+                        <Link  className="navigationbar-links" to="/carpanter" >
                             Carpanter
                          </Link>
-                         {dropdowncarpanter && <DropdownCarpanter/>}
+                         
                     </li>
 
                     <li className='navigationbar-item' 
-                        onMouseEnter={onMouseEnterServices}
-                        onMouseLeave={onMouseLeaveServices}
+                        
                     >
-                        <Link  className="navigationbar-links" onClick={closeMobileMenu}>
+                        <Link  className="navigationbar-links" to="/ac">
                         Air Conditioner
                          </Link>
-                         {dropdownservices && <DropdownServices/>}
+                         
                     </li>
 
                     <li className='navigationbar-item'>

@@ -21,11 +21,9 @@ function App() {
       <Route path="/handyman" exact component={HandymanServices}/>
       <Route path="/carpanter" exact component={CarpanterServices}/>
       <Route path="/electrician" exact component={ElectricianServices}/>
-      <Route path="/construction" exact component={ConstructionServices}/>
-      <Route path="/acservice" exact component={AcServices}/>
+      <Route path="/ac" exact component={AcServices}/>
       <Route path="/carpanters" exact component={CarpanterServices}/>
       <Route path="/plumber" exact component={PlumberServices}/>
-      <Route path="/Interior" exact component={InteriorDesignServices}/>
       <Route path="/contact" exact component={ContactPage}/>
       <Route path="/dashboard" exact component={DasboardService}/>
       
