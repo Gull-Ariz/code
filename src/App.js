@@ -26,6 +26,7 @@ function App() {
       <Route path="/plumber" exact component={PlumberServices}/>
       <Route path="/contact" exact component={ContactPage}/>
       <Route path="/dashboard" exact component={DasboardService}/>
+      <Route path="/addservice" exact component={AddService}/>
       
     </Switch>
    </BrowserRouter>

@@ -16,9 +16,6 @@ function HomePage() {
              <ServiceCard/>
              <Footer/>
         </div>
-
-
-        
     )
 }
 

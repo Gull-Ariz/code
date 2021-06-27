@@ -1,19 +1,58 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './AddServices.css'
+import { servicesList } from '../../services';
+const service = {
+    name: "",
+    description: "",
+    price: ""
+}
 
 function AddServices() {
+    const [serviceVal, setServiceVal] = useState([service]);
+
+const handleInputChange = e => {
+    const { name, value } = e.target;
+    setServiceVal(
+        {
+            ...serviceVal,
+            [name]: value
+        },
+    )
+}
+const Validate = () => {
+    let temp = {}
+    temp.name = serviceVal.name ==="" ? false : true;
+    temp.description = serviceVal.description === "" ? false : true;
+    temp.price = serviceVal.price === "" ? false : true;
+    return Object.values(temp).every(x => x === true);
+}
+
+const handleSubmit = (e) => {
+    e.preventDefault();
+    if (Validate()) {
+        let temp = {
+            name: serviceVal.name,
+            description: serviceVal.description,
+            price: serviceVal.price
+        };
+        addService(temp);
+    }
+}
+
+const addService = (temp) => {
+    servicesList.push(temp);
+    console.log(servicesList);    
+}
     return (
         <div className="mainformdiv">
-            
             <div className="innerformdiv">
                 <h2 className="text-center">Add Service</h2>
                 <form autoComplete="off" noValidate>
-                    <input type="file" className="imageinput"/>
-                    <input  placeholder="Service Name" type="text"/>
-                    <textarea   type="text" placeholder="Decription of the Service"/>
-                    <input  type="submit" className="submit-btn" value="Submit" />    
+                    <input  placeholder="Service Name" name="name" type="text" value={serviceVal.name} onChange={handleInputChange}/>
+                    <textarea   type="text" name="description" placeholder="Decription of the Service" value={serviceVal.description} onChange={handleInputChange}/>
+                    <input placeholder="Price" name="price" value={serviceVal.price} onChange={handleInputChange}/>
+                    <button onClick={handleSubmit} type="submit" className="btn btn-light">Submit</button>
                 </form>
-                
             </div>
         </div>
     )

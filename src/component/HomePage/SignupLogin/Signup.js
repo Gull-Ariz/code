@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import './Login.css'
+import './Login.css';
+import axios from 'axios';
+import Cookies from 'universal-cookie';
 
 const user = {
     userName: "",
@@ -20,8 +22,9 @@ const handleInputChange = e => {
     )
 }
 const Validate = () => {
+    console.log(userVal.userName);
     let temp = {}
-    temp.userName = userVal.userName ==="";
+    temp.userName = userVal.userName ==="" ? false : true;
     temp.email = userVal.email === "" ? false : true;
     temp.password = userVal.password === "" ? false : true;
     return Object.values(temp).every(x => x === true);
@@ -34,9 +37,21 @@ const handleSubmit = (e) => {
         formData1.append('userName', userVal.userName);
         formData1.append('email', userVal.email);
         formData1.append('password', userVal.password);
-        console.log(userVal.email);
+        saveUser(formData1);
     }
 }
+
+const saveUser = (formData1) => {
+    axios.post('http://localhost:55444/api/seller', formData1, {
+        headers: { 'Content-Type': 'application/json' }
+    })
+        .then(res => {
+            (new Cookies()).set('verificationId', res.data._id);
+            this.setState({renderVerificationPage: true});
+        })
+        .catch(err => console.log(err))
+}
+
     return (
         <div className="container" id="containerlogin">
 
@@ -46,23 +61,23 @@ const handleSubmit = (e) => {
                         <h2 className="title">
                             Sign Up
                         </h2>
-                        <div className="form-group Input-field">
+                        <div className="Input-field">
                             <i className="fas fa-user"></i>
-                            <input className={"form-control"} name="userName"
-                                    value={user.userName} onChange={handleInputChange} type="text" placeholder="Username" />
+                            <input className={""} name="userName"
+                                    value={userVal.userName} onChange={handleInputChange} type="text" placeholder="Username" />
                         </div>
 
-                        <div className="form-group Input-field">
+                        <div className="Input-field">
                             <i className="fas fa-lock"></i>
-                            <input className={"form-control"} name="password"
-                                    value={user.password} onChange={handleInputChange} type="password" placeholder="Password" />
+                            <input className={""} name="password"
+                                    value={userVal.password} onChange={handleInputChange} type="password" placeholder="Password" />
                         </div>
 
 
-                        <div className="form-group Input-field">
+                        <div className="Input-field">
                             <i className="fas fa-at"></i>
-                            <input className={"form-control"} placeholder="Email" name="email"
-                                    value={user.email} onChange={handleInputChange} type="email" placeholder="Email" />
+                            <input className={""} placeholder="Email" name="email"
+                                    value={userVal.email} onChange={handleInputChange} type="email" placeholder="Email" />
                         </div>
 
                         <div className="form-group">

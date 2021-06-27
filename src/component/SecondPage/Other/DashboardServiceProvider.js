@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './DashboardService.css';
-import ReactModal from 'react-modal';
 import AddServices from './AddServices';
+import { Link } from 'react-router-dom';
+import Cards from '../Cards/Cards';
 
 export default function DashboardServiceProvider() {
-    //const [modalIsOpenAddServiceForm, setModalIsOpenAddServiceForm] = useState(false);
-
+    
     return (
         <div>
             <input type="checkbox" id="check" />
@@ -29,8 +29,7 @@ export default function DashboardServiceProvider() {
                     <img src="../../../images/ac.jpeg" />
                     <h4>Muhammad Hamza Yousaf</h4>
                 </center>
-                <a href="#"><i className="fas fa-plus"></i><span>Add Service</span></a>
-                <a href="#"><i className="fas fa-edit"></i><span>Update Service</span></a>
+                <Link to="/addservice"><i className="fas fa-plus"></i><span>Add Service</span></Link>
                 <a href="#"><i className="fas fa-trash-alt"></i><span>Remove Service</span></a>
                 <a href="#"><i className="fas fa-envelope"></i><span>Messages</span></a>
             </div>
@@ -42,8 +41,8 @@ export default function DashboardServiceProvider() {
             <div className="services">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-4 col-md-12 col-12">
-                            <img src="../../../images/ac.jpeg" />
+                        <div>
+                            <Cards />
                         </div>
                         <div className="col-lg-4 col-md-12 col-12">
                             <img src="../../../images/ac.jpeg" />
@@ -51,6 +50,8 @@ export default function DashboardServiceProvider() {
                         <div className="col-lg-4 col-md-12 col-12">
                             <img src="../../../images/ac.jpeg" />
                         </div>
+
+
                     </div>
                 </div>
             </div>
