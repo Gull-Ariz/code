@@ -12,7 +12,6 @@ const user = {
 function Signup() {
     const [userVal, setUserVal] = useState([user]);
 
-<<<<<<< HEAD
 const handleInputChange = e => {
     const { name, value } = e.target;
     setUserVal(
@@ -53,35 +52,6 @@ const saveUser = (formData1) => {
         .catch(err => console.log(err))
 }
 
-=======
-    const handleInputChange = e => {
-        const { name, value } = e.target;
-        setUserVal(
-            {
-                ...userVal,
-                [name]: value
-            },
-        )
-    }
-    const Validate = () => {
-        let temp = {}
-        temp.userName = userVal.userName === "";
-        temp.email = userVal.email === "" ? false : true;
-        temp.password = userVal.password === "" ? false : true;
-        return Object.values(temp).every(x => x === true);
-    }
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (Validate()) {
-            let formData1 = new FormData();
-            formData1.append('userName', userVal.userName);
-            formData1.append('email', userVal.email);
-            formData1.append('password', userVal.password);
-            console.log(userVal.email);
-        }
-    }
->>>>>>> f74fb2e7b408a282c935d3e62488e9f38234becd
     return (
         <div className="container" id="containerlogin">
 
@@ -93,36 +63,23 @@ const saveUser = (formData1) => {
                         </h2>
                         <div className="Input-field">
                             <i className="fas fa-user"></i>
-<<<<<<< HEAD
                             <input className={""} name="userName"
                                     value={userVal.userName} onChange={handleInputChange} type="text" placeholder="Username" />
-=======
-                            <input className={"form-control"} name="userName"
-                                value={user.userName} onChange={handleInputChange} type="text" placeholder="Username" />
->>>>>>> f74fb2e7b408a282c935d3e62488e9f38234becd
-                        </div>
 
+                        </div>
                         <div className="Input-field">
                             <i className="fas fa-lock"></i>
-<<<<<<< HEAD
                             <input className={""} name="password"
                                     value={userVal.password} onChange={handleInputChange} type="password" placeholder="Password" />
-=======
-                            <input className={"form-control"} name="password"
-                                value={user.password} onChange={handleInputChange} type="password" placeholder="Password" />
->>>>>>> f74fb2e7b408a282c935d3e62488e9f38234becd
                         </div>
 
 
                         <div className="Input-field">
                             <i className="fas fa-at"></i>
-<<<<<<< HEAD
+
                             <input className={""} placeholder="Email" name="email"
                                     value={userVal.email} onChange={handleInputChange} type="email" placeholder="Email" />
-=======
-                            <input className={"form-control"} placeholder="Email" name="email"
-                                value={user.email} onChange={handleInputChange} type="email" placeholder="Email" />
->>>>>>> f74fb2e7b408a282c935d3e62488e9f38234becd
+
                         </div>
 
                         <div className="form-group">

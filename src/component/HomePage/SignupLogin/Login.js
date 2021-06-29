@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import './Login.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { usersList } from './UsersData';
+
+
 const initialValues = {
     email: '',
     password: ''
@@ -29,29 +32,41 @@ export default function Login(props) {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (Validate()) {
-            let formData1 = new FormData();
-            formData1.append('email', values1.email);
-            formData1.append('password', values1.password);
-            console.log(values1.email);
-            saveJwt(formData1);
+            // let formData1 = new FormData();
+            // formData1.append('email', values1.email);
+            // formData1.append('password', values1.password);
+            let temp = {
+                email:'',
+                password:''
+            };
+            temp.email = values1.email;
+            temp.password = values1.password;
+            saveJwt(temp);
         }
     }
 
     const saveJwt = (formData1) => {
-        axios.post('http://localhost:55444/api/seller/authenticate', formData1, {
-            headers: { 'Content-Type': 'application/json' }
-        })
-            .then(res => {
-                result = true;
-                console.log(res.data);
-                localStorage.setItem('loginObj', JSON.stringify({
-                    login: true,
-                    email: formData1.email,
-                    token: res.data
-                }));
+        // axios.post('http://localhost:55444/api/seller/authenticate', formData1, {
+        //     headers: { 'Content-Type': 'application/json' }
+        // })
+        //     .then(res => {
+        //         result = true;
+        //         console.log(res.data);
+        //         localStorage.setItem('loginObj', JSON.stringify({
+        //             login: true,
+        //             email: formData1.email,
+        //             token: res.data
+        //         }));
+        //         setModalIsOpenLogin(false);
+        //     })
+        //     .catch(err => console.log(err))
+        usersList.forEach(element => {
+            if(element.email === formData1.email && element.password === formData1.password)
+            {
                 setModalIsOpenLogin(false);
-            })
-            .catch(err => console.log(err))
+            }
+        });
+
     }
     return (
         <>
@@ -68,7 +83,7 @@ export default function Login(props) {
                                 <input className={""} placeholder="Email" name="email"
                                     value={values1.email} onChange={handleInputChange} />
                             </div>
-        
+
                             <div className="Input-field">
                                 <i className="fas fa-lock"></i>
                                 <input type="password" className={""} placeholder="Password" name="password"
@@ -83,7 +98,7 @@ export default function Login(props) {
                 </div>
             </div>
             <div>
-            {localStorage.getItem("loginObj") ? 
+            {localStorage.getItem("loginObj") ?
             <div>
                 <Link to='/dashboard'></Link>
             </div>

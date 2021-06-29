@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import './DashboardService.css';
 import AddServices from './AddServices';
 import { Link } from 'react-router-dom';
-import Cards from '../Cards/Cards';
-
+import { servicesList } from '../Cards/ServiceData';
 export default function DashboardServiceProvider() {
-    
+
+
     return (
         <div>
             <input type="checkbox" id="check" />
@@ -41,11 +41,14 @@ export default function DashboardServiceProvider() {
             <div className="services">
                 <div className="container">
                     <div className="row">
-                        <div>
-                            <Cards />
-                        </div>
                         <div className="col-lg-4 col-md-12 col-12">
-                            <img src="../../../images/ac.jpeg" />
+                            {
+                                servicesList.map((service, index)=>(
+                                    service.map((ser, index)=>(
+                                        <h1>{ser.title}</h1>
+                                    ))
+                                ))
+                            }
                         </div>
                         <div className="col-lg-4 col-md-12 col-12">
                             <img src="../../../images/ac.jpeg" />
