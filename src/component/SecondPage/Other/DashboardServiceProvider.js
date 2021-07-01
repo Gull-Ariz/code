@@ -41,7 +41,7 @@ export default function DashboardServiceProvider() {
                     setZ((x + 1))
                     console.log(x);
                     setList(servicesList)
-                }}>  { list[0].length }<i className="fas fa-plus"></i><span>Add Service</span></ButtonAddService> </a>
+                }}> <i className="fas fa-plus"></i><span>Add Service</span></ButtonAddService> </a>
                 <a href="#"><i className="fas fa-trash-alt"></i><span>Remove Service</span></a>
                 <a href="#"><i className="fas fa-envelope"></i><span>Messages</span></a>
             </div>
@@ -75,7 +75,8 @@ export default function DashboardServiceProvider() {
                                                         })
                                                         setList(newlist);
                                                         // servicesList = newlist;
-
+                                                      
+                                                        servicesList.pop(index);
                                                         }} className='btn btn-danger'>delete</button>
                                                     </div>
                                                 </div>

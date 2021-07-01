@@ -65,6 +65,7 @@ function ButtonLogin(prop) {
 
 function ButtonAddService(prop) {
     const [modalIsOpenLogin, setModalIsOpenLogin] = useState(false);
+    const [modal, setModal] = useState(false);
     const modalClose = () =>
     {
         setModalIsOpenLogin(false);
@@ -74,17 +75,22 @@ function ButtonAddService(prop) {
           
             <div onClick={() => {setModalIsOpenLogin(true)}}>
                 {prop.children}
-                        <div className="miandivmodal">
-                            <ReactModal isOpen={modalIsOpenLogin} onRequestClose={() => setModalIsOpenLogin(false)} className="Modal" >
-                        <AddService onSave={
-                            (newObject) => {
+                <div className="miandivmodal">
+                    {console.log(modalIsOpenLogin)}
+                    {
+
+                     modalIsOpenLogin &&   <ReactModal isOpen={modalIsOpenLogin} onRequestClose={() => setModalIsOpenLogin(false)} className="Modal" >
+                            <AddService setModalIsOpenLogin={setModalIsOpenLogin} onSave={
+                                (newObject) => {
                          
-                            setModalIsOpenLogin(false)
-                            prop.onSave(newObject)
-                        }
-                        } />
-                            </ReactModal>
-                        </div>
+                                    setModalIsOpenLogin(false)
+                                    console.log('sx');
+                                    prop.onSave(newObject)
+                          }
+                            } />
+                        </ReactModal>
+                    }
+                     </div>
                    
                 </div>
                
