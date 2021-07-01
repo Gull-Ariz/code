@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Login.css';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
+import { usersList } from './UsersData';
 
 const user = {
     userName: "",
@@ -42,14 +43,16 @@ const handleSubmit = (e) => {
 }
 
 const saveUser = (formData1) => {
-    axios.post('http://localhost:55444/api/seller', formData1, {
-        headers: { 'Content-Type': 'application/json' }
-    })
-        .then(res => {
-            (new Cookies()).set('verificationId', res.data._id);
-            this.setState({renderVerificationPage: true});
-        })
-        .catch(err => console.log(err))
+    usersList.push({ userName: userVal.userName, email: userVal.email, password: userVal.password })
+    console.log(usersList)
+    // axios.post('http://localhost:55444/api/seller', formData1, {
+    //     headers: { 'Content-Type': 'application/json' }
+    // })
+    //     .then(res => {
+    //         (new Cookies()).set('verificationId', res.data._id);
+    //         this.setState({renderVerificationPage: true});
+    //     })
+    //     .catch(err => console.log(err))
 }
 
     return (

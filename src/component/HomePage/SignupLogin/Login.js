@@ -26,11 +26,13 @@ export default function Login(props) {
         let temp = {}
         temp.email = values1.email === "" ? false : true;
         temp.password = values1.password === "" ? false : true;
+       
         return Object.values(temp).every(x => x === true);
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        
         if (Validate()) {
             // let formData1 = new FormData();
             // formData1.append('email', values1.email);
@@ -42,6 +44,8 @@ export default function Login(props) {
             temp.email = values1.email;
             temp.password = values1.password;
             saveJwt(temp);
+        } else {
+            console.log('Error')
         }
     }
 
@@ -60,12 +64,21 @@ export default function Login(props) {
         //         setModalIsOpenLogin(false);
         //     })
         //     .catch(err => console.log(err))
+        let flag=false
         usersList.forEach(element => {
             if(element.email === formData1.email && element.password === formData1.password)
             {
-                setModalIsOpenLogin(false);
+                console.log(formData1);
+                window.localStorage.setItem('user_name',element.userName)
+                window.location = '/dashboard'
+                flag=true
+                // setModalIsOpenLogin(false);
+
             }
         });
+        if (!flag) {
+            alert('Invalid user')
+        }
 
     }
     return (

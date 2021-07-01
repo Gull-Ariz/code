@@ -301,4 +301,23 @@ export const ACData = [
     }
 ]
 
-export const servicesList = [ACData,HandyManData,PlumberData,PaintingData];
+export const servicesList = [ {
+    seller: 'Gull Ariz',
+    description: '',
+    title: 'Drilling & Hanging',
+    price: 'Cost aprox(1000)',
+    path: 'fa-3x fas fa-hammer'
+}, {
+    seller: 'Gull Ariz',
+    description: '',
+    title: 'Drilling & Hanging',
+    price: 'Cost aprox(1000)',
+    path: 'fa-3x fas fa-hammer'
+    },
+    {
+        seller: 'Gull Ariz',
+        description: '',
+        title: 'Drilling & Hanging',
+        price: 'Cost aprox(1000)',
+        path: 'fa-3x fas fa-hammer'
+    },];

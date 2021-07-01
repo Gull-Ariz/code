@@ -1,6 +1,11 @@
 export const usersList = [
   {
     userName:'Gull Ariz',
+    email: '1',
+    password: '1'
+  },
+  {
+    userName:'Gull Ariz',
     email: 'gullariz82@gmail.com',
     password: 'ariz123'
   },

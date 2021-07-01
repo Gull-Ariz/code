@@ -1,13 +1,13 @@
 import React, {useState} from 'react'
 import './AddServices.css'
-import { servicesList } from '../../services';
+import { servicesList } from '../Cards/ServiceData';
 const service = {
     name: "",
     description: "",
     price: ""
 }
 
-function AddServices() {
+function AddServices(props) {
     const [serviceVal, setServiceVal] = useState([service]);
 
 const handleInputChange = e => {
@@ -33,15 +33,17 @@ const handleSubmit = (e) => {
         let temp = {
             name: serviceVal.name,
             description: serviceVal.description,
-            price: serviceVal.price
+            price: serviceVal.price,
+            seller:localStorage.getItem('user_name')
         };
         addService(temp);
+        props.onSave(temp)
     }
 }
 
 const addService = (temp) => {
-    servicesList.push(temp);
-    console.log(servicesList);    
+    console.log(servicesList);
+    // window.location='/dashboard'
 }
     return (
         <div className="mainformdiv">
